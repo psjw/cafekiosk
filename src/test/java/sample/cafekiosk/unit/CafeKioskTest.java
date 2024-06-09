@@ -1,6 +1,7 @@
 package sample.cafekiosk.unit;
 
 import org.assertj.core.api.HamcrestCondition;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import sample.cafekiosk.unit.beverages.Americano;
 import sample.cafekiosk.unit.beverages.Latte;
@@ -25,6 +26,7 @@ class CafeKioskTest {
         System.out.println(">>> 담긴 음료 : " + cafeKiosk.getBeverages().get(0).getName());
     }
 
+    @DisplayName("음료 1개 추가 테스트")
     @Test
     void add() {
         CafeKiosk cafeKiosk = new CafeKiosk();
